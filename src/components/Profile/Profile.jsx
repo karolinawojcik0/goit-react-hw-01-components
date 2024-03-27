@@ -1,16 +1,16 @@
-function Profile({ username, tag, location, avatar, stats }) {
-    return (
-        <>
-            <div className="profile">
+import PropTypes from "prop-types";
+import user from 'components/data/user.json'
+
+<div className="profile">
   <div className="description">
     <img
-      src={avatar}
+      src={user.avatar}
       alt="User avatar"
-      class="avatar"
+      className="avatar"
     />
-                    <h1 className="name">{username}</h1>
-    <p className="tag">@pmarica</p>
-    <p className="location">Salvador, Brasil</p>
+        <p className="name">{user.username}</p>
+        <p className="tag">{user.tag}</p>
+        <p className="location">{user.location}</p>
   </div>
 
   <ul className="stats">
@@ -28,7 +28,3 @@ function Profile({ username, tag, location, avatar, stats }) {
     </li>
   </ul>
 </div>
-        </>
-    )
-}
-export default Profile;
