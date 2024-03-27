@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import user from 'components/data/user.json'
+import css from './Profile.module.css'
 
 <div className="profile">
   <div className="description">
@@ -16,15 +17,15 @@ import user from 'components/data/user.json'
   <ul className="stats">
     <li>
       <span className="label">Followers</span>
-      <span className="quantity">1000</span>
+            <span className="quantity">{user.stats.followers}</span>
     </li>
     <li>
       <span className="label">Views</span>
-      <span className="quantity">2000</span>
+            <span className="quantity">{user.stats.views}</span>
     </li>
     <li>
       <span className="label">Likes</span>
-      <span className="quantity">3000</span>
+            <span className="quantity">{user.stats.likes}</span>
     </li>
   </ul>
 </div>
