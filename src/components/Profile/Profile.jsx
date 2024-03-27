@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import user from 'components/data/user.json'
 import css from './Profile.module.css'
 
-<div className="profile">
+<div className="profile-card">
   <div className="description">
     <img
       src={user.avatar}
