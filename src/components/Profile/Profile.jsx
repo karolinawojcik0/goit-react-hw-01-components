@@ -1,5 +1,4 @@
-import { ProfileCard, ProfileImage, ProfileTag, Username } from './Profile.css';
-import styles from './Profile.css';
+import { Location, ProfileCard, ProfileImage, ProfileTag, Username } from './Profile.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -11,7 +10,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         />
         <Username>{username}</Username>
         <ProfileTag>{tag}</ProfileTag>
-        <p className="location">{location}</p>
+        <Location>{location}</Location>
 
       <ul className="stats">
         <li>

@@ -18,7 +18,8 @@ export const ProfileImage = styled.div`
   background-color: white;
 `;
 
-export const Username = styled.div`
+export const Username = styled.ul`
+list-style-type: none;
 font-size: 40px;
 margin: 10px 0;`
 
@@ -26,3 +27,8 @@ export const ProfileTag = styled.div`
 color: grey;
 font-size: 20px
 `;
+
+export const Location = styled.div`
+color: grey;
+font-size: 30px;
+`
