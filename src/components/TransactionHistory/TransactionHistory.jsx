@@ -1,4 +1,9 @@
-import { TableBody, TableHead, TransactionHistoryTable } from "./TransactionHistory.css";
+import {
+  TableBody,
+  TableHead,
+  TableHeadText,
+  TransactionHistoryTable,
+} from './TransactionHistory.css';
 
 export const TransactionHistory = ({ items }) => {
   return (
@@ -6,9 +11,9 @@ export const TransactionHistory = ({ items }) => {
       <TransactionHistoryTable>
         <TableHead>
           <tr>
-            <th>Type</th>
-            <th>Amount</th>
-            <th>Currency</th>
+            <TableHeadText>Type</TableHeadText>
+            <th className="TableHeadText">Amount</th>
+            <th className="TableHeadText">Currency</th>
           </tr>
         </TableHead>
         <TableBody>

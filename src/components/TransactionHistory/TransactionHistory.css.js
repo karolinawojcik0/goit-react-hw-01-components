@@ -12,6 +12,7 @@ export const TransactionHistoryTable = styled.table`
     border-right: 1px solid #eaeaea;
     padding: 10px;
     text-align: left;
+    width: 250px;
   }
 
   th:last-child,
@@ -26,7 +27,13 @@ background-color: #16425b;
 color: white; 
 padding: 10px; 
 text-align: left;`
-    ;
+  ;
+    
+export const TableHeadText = styled.th`
+width: 250px;
+  display: flex;
+  justify-content: center;`
+  
 
 export const TableBody = styled.tbody`
   background-color: #f7f7f7;
