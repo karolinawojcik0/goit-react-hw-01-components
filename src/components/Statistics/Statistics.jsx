@@ -1,5 +1,10 @@
 import React from 'react';
-import { StatList } from './Statistics.css';
+import {
+  Label,
+  Percentage,
+  SectionStatistics,
+  StatList,
+} from './Statistics.css';
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
@@ -8,7 +13,7 @@ function getRandomHexColor() {
 export const Statistics = ({ title, stats }) => {
   return (
     <>
-      <section className="statistics">
+      <SectionStatistics>
         {title && <h2 className="title">{title}</h2>}
 
         <StatList>
@@ -18,12 +23,12 @@ export const Statistics = ({ title, stats }) => {
               className="item"
               style={{ backgroundColor: getRandomHexColor() }}
             >
-              <span className="label">{stat.label}</span>
-              <span className="percentage">{stat.percentage}</span>
+              <Label>{stat.label}</Label>
+              <Percentage>{stat.percentage}</Percentage>
             </li>
           ))}
         </StatList>
-      </section>
+      </SectionStatistics>
     </>
   );
 };
