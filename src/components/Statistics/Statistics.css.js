@@ -5,17 +5,18 @@ list-style: none;
 display: flex;
 flex-direction: row;
 justify-content: space-between;
-align-self: flex-end;
+align-items: flex-end;
 padding: 0;
+margin: 0;
 `
 
 export const SectionStatistics = styled.section`
 margin: 20px auto;
-background-color: white;
 height: 200px;
 width: 500px;
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 align-items: center;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);`
 
@@ -31,5 +32,3 @@ display: flex;
 justify-content: center;
 font-size: 30px;`
  
-export const Item = styled.li`
-`
