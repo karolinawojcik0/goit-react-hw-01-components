@@ -4,7 +4,6 @@ import {
   Percentage,
   SectionStatistics,
   StatList,
-  StyledListItem,
 } from './Statistics.css';
 
 function getRandomHexColor() {

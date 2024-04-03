@@ -31,4 +31,5 @@ display: flex;
 justify-content: center;
 font-size: 30px;`
  
-
+export const Item = styled.li`
+`
