@@ -6,8 +6,7 @@ background-color: white;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 20px;
-  margin: 0 px;
+  margin: auto;
 `
 
 export const ProfileImage = styled.img`
@@ -36,10 +35,7 @@ font-size: 30px;
 
 export const Stats = styled.ul`
 display: flex;
-  justify-content: space-around;
-  background-color: #f8f8f8; 
-  padding: 10px 0;
-  border-radius: 10px;
+  justify-content: space-around; 
   margin-top: 20px;
 background-color: #CED4DA;
 border-top: 2px solid #495057;
