@@ -7,8 +7,7 @@ flex-direction: row;
 justify-content: space-between;
 align-items: flex-end;
 padding: 0;
-margin: 0;
-`
+margin: 0; `
 
 export const SectionStatistics = styled.section`
 margin: 20px auto;

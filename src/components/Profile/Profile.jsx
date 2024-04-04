@@ -7,6 +7,8 @@ import {
   Stats,
   Label,
   Quantity,
+  Separator,
+  LastSeparator,
 } from './Profile.css';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -19,18 +21,18 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <Location>{location}</Location>
 
         <Stats>
-          <li>
+          <Separator>
             <Label>Followers </Label>
             <Quantity>{stats.followers}</Quantity>
-          </li>
-          <li>
+          </Separator>
+          <Separator>
             <Label>Views </Label>
             <Quantity>{stats.views}</Quantity>
-          </li>
-          <li>
+          </Separator>
+          <LastSeparator>
             <Label>Likes </Label>
             <Quantity>{stats.likes}</Quantity>
-          </li>
+          </LastSeparator>
         </Stats>
       </ProfileCard>
     </>
